@@ -1,0 +1,28 @@
+<form class="form" #editForm="ngForm" (ngSubmit)="editProfile(editForm)">
+  <p>Use the form below to update your profile.</p>
+  <label for="name">Name</label>
+  <input
+    type="text"
+    name="name"
+    id="name"
+    placeholder="Enter your name here"
+    ngModel
+  />
+  <label for="contact">Contact</label>
+  <input
+    type="text"
+    name="contact"
+    id="contact"
+    placeholder="Enter your contact info here"
+    ngModel
+  />
+  <label for="bio">Bio</label>
+  <input
+    type="text"
+    name="bio"
+    id="bio"
+    placeholder="Enter your bio here"
+    ngModel
+  />
+  <button type="submit">Update</button>
+</form>
